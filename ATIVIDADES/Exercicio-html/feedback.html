@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Feedback</title>
+</head>
+<body>
+  <h1>Deixe seu Feedback</h1>
+  <form action="#" method="post">
+    <label>Nome:<br><input type="text" name="nome" required /></label><br><br>
+    <label>Email:<br><input type="email" name="email" required /></label><br><br>
+    <label>Endereço Completo:<br><input type="text" name="endereco" required /></label><br><br>
+    <label>Tipo de Feedback:<br>
+      <select name="tipo">
+        <option value="elogio">Elogio</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="reclamacao">Reclamação</option>
+      </select>
+    </label><br><br>
+    <label>Mensagem:<br>
+      <textarea name="mensagem" rows="5" cols="30" required></textarea>
+    </label><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

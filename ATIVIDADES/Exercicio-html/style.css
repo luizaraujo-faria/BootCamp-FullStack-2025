@@ -1,0 +1,110 @@
+/* Cores e Box Model */
+header, main, footer {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+}
+
+header {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+main {
+  background-color: #f1f8e9;
+  color: #33691e;
+}
+
+footer {
+  background-color: #ffe0b2;
+  color: #bf360c;
+  text-align: center;
+}
+
+/* Estilos específicos */
+h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.destaque {
+  font-style: italic;
+  background-color: #f5f5f5;
+}
+
+#importante {
+  border-top: 5px solid red;
+}
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.galeria {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.galeria figure {
+  text-align: center;
+}
+
+.galeria img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu.active .menu-links {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

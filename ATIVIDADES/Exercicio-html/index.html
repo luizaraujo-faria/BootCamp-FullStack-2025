@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Página</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo à Minha Página</h1>
+    <p>Esta é uma página simples para demonstrar HTML semântico.</p>
+  </header>
+
+  <nav class="menu">
+    <div class="menu-toggle">&#9776;</div>
+     <ul class="menu-links">
+       <li><a href="index.html">Início</a></li>
+       <li><a href="listas.html">Listas</a></li>
+       <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+   </nav>
+
+  <main>
+    <section>
+      <h2>Missão</h2>
+      <p class="destaque">Nossa missão é entregar qualidade e valor com simplicidade.</p>
+    </section>
+
+    <section>
+      <h2>Visão</h2>
+      <p id="importante">Ser referência em boas práticas e acessibilidade na web.</p>
+    </section>
+
+    <section>
+        <div class="galeria-container">
+          <div class="galeria">
+            <figure><img src="imagens/img1.jpg" alt=""><figcaption>Imagem 1</figcaption></figure>
+            <figure><img src="imagens/img2.jpg" alt=""><figcaption>Imagem 2</figcaption></figure>
+            <figure><img src="imagens/img3.jpg" alt=""><figcaption>Imagem 3</figcaption></figure>
+            <figure><img src="imagens/img4.jpg" alt=""><figcaption>Imagem 4</figcaption></figure>
+            <figure><img src="imagens/img5.jpg" alt=""><figcaption>Imagem 5</figcaption></figure>
+            <figure><img src="imagens/img6.jpg" alt=""><figcaption>Imagem 6</figcaption></figure>
+            <figure><img src="imagens/img7.jpg" alt=""><figcaption>Imagem 7</figcaption></figure>
+            <figure><img src="imagens/img8.jpg" alt=""><figcaption>Imagem 8</figcaption></figure>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Luiz Henrique</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
